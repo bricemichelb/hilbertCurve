@@ -1,5 +1,5 @@
 let colored = true;
-let order = 4;
+let order = 7;
 let N = Math.pow(2,order);
 let total = N * N;
 let path = [];
@@ -20,9 +20,10 @@ function draw() {
   background(51);
   beginShape();
   noFill();
+  strokeWeight(1);
   for(let i = 1; i < counter; i++) {
     if(colored) {
-      h = map(i,0,path.length,0,360);
+      h = map(i, 0, path.length, 0, 360);
       stroke(h,255,255);
     }else{
       stroke(255)
