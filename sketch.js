@@ -9,7 +9,7 @@ let pathCol = [];
 let shapeColor = [];
 let counter = 0;
 let img;
-let fillWith = 2; //0 -> regular, 1 -> ellipse, 2->image 
+let fillWith = 0; //0 -> regular, 1 -> ellipse, 2->image 
 
 function preload() {
   if (fillWith == 2) {    
